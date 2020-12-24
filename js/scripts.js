@@ -38,6 +38,7 @@ elForm.addEventListener('submit', function(evt) {
   evt.preventDefault();
 
   for(var i = 0; i < contactArray.length; i++) {
+    elNumber.classList.remove('is-invalid');
     if(elNumber.value === contactArray[i].number) {
       elNumber.classList.add('is-invalid');
       console.log(`salooom`);
